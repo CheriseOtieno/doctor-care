@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Doctor Care | Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+        
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/dashboard.css" type="text/css" />
+
+        
+    </head>
+    <body>
+        <div class="application">
+            <div class="dasboard-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-2">
+                            <div class="main-logo">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sidebar-menu">Menu</div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-8">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Search.." />
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-end align-items-center gap-3">
+                            
+                            <div id="notifications" class="notifications">
+                                <i class="bi bi-bell-fill"></i>
+                            </div>
+
+                            <div id="log-out" class="log-out">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications-modal">
+
+                    <div id="hide">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+
+                    <div class="notifications-wrapper">
+                        <h5>Notifications</h5>
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <i class="bi bi-2-circle-fill"></i>
+                                <img class="notification-image" src="images/notification1.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>1m ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <i class="bi bi-2-circle-fill"></i>
+                                <img src="images/notification2.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>1m ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <img src="images/notification3.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>1m ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <img src="images/notification4.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>10 Hrs ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <img src="images/notification5.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>15 Hrs ago.</p>
+                            </div>
+                            
+                        </a>
+
+                    </div>
+                    
+                </div>
+
+                <div class="log-out-1">
+                    <div class="log-out-container">
+                        <div id="hide-logout">
+                        <h5>JOHN DOE</h5>
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                    <div class="log-out-wrapper">
+                        <a href="settings.html">Admin</a>
+                        <a href="#!">My Account</a>
+                        <a href="login.html">Log out</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="main-content">
+                <div class="sidebar">
+                    <div class="logo">
+                        <a href="index.html">
+                            logo
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a class="active" href="index.html"> <i class="bi bi-speedometer2"></i> Dashboard </a>
+                        </li>
+                        <li>
+                            <a href="customers.html"><i class="bi bi-people"></i> Customers </a>
+                        </li>
+                        <li>
+                            <a href="settings.html"><i class="bi bi-gear"></i> Settings</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="card-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card p-5" style="background-color: #037bff;">
+                                        <h6>All Users</h6>
+                                        <h1 class="fw-bold">1009</h1>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card p-5" style="background-color: #27a745;">
+                                        <h6>Active Users</h6>
+                                        <h1 class="fw-bold">692</h1>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card p-5" style="background-color: #dc3445;">
+                                        <h6>Dormant Users</h6>
+                                        <h1 class="fw-bold">317</h1>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card p-5" style="background-color: #343a40;">
+                                        <h6>Recent Users</h6>
+                                        <h1 class="fw-bold">45</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-table-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="data-table">
+                                        <div class="d-flex justify-content-between pb-3">
+                                            <p>Latest Users</p>
+                                            <a href="customers.html" style="color: #7b3aab; text-decoration: underline;">View All</a>
+                                        </div>
+
+                                        <table>
+                                            <tr class="small">
+                                                <th>#</th>
+                                                <th style="color: #758794;">Full Name</th>
+                                                <th style="color: #758794;">Email Address</th>
+                                                <th style="color: #758794;">Phone No.</th>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>1</td>
+                                                <td>Cameron Williamson</td>
+                                                <td>cameron@email.com</td>
+                                                <td>070123456</td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>2</td>
+                                                <td>Jacob Jones</td>
+                                                <td>jacob@email.com</td>
+                                                <td>071234567</td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>3</td>
+                                                <td>Kristin Watson</td>
+                                                <td>kristin@email.com</td>
+                                                <td>072345678</td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>4</td>
+                                                <td>Esther Howard</td>
+                                                <td>esther@email.com</td>
+                                                <td>073456789</td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>5</td>
+                                                <td>Heidi Moor</td>
+                                                <td>heidi@email.com</td>
+                                                <td>074567890</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#log-out").click(function(){
+                    $(".log-out-1").show();
+                });
+                $("#hide-logout").click(function(){
+                    $(".log-out-1").hide();
+                });
+            });
+
+            $(document).ready(function(){
+                
+                $("#notifications").click(function(){
+                    $(".notifications-modal").show();
+                });
+                $("#hide").click(function(){
+                    $(".notifications-modal").hide();
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript"></script>
+    </body>
+</html>

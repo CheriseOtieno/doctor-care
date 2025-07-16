@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Doctor Care | Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+       
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/dashboard.css" type="text/css" />
+
+       
+    </head>
+    <body>
+        <div class="application">
+            <div class="dasboard-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-2">
+                            <div class="main-logo">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sidebar-menu">Menu</div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-8">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Search.." />
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-end align-items-center gap-3">
+                            
+                            <div id="notifications" class="notifications">
+                                <i class="bi bi-bell-fill"></i>
+                            </div>
+
+                            <div id="log-out" class="log-out">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications-modal">
+
+                    <div id="hide">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+
+                    <div class="notifications-wrapper">
+                        <h5>Notifications</h5>
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <i class="bi bi-2-circle-fill"></i>
+                                <img src="images/notification1.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>1m ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <i class="bi bi-2-circle-fill"></i>
+                                <img src="images/notification2.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>1m ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <img src="images/notification3.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>1m ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <img src="images/notification4.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>10 Hrs ago.</p>
+                            </div>
+                            
+                        </a>
+
+                        <a class="sale d-flex" href="#!">
+
+                            <div class="notification-profile">
+                                <img src="images/notification5.png" />
+                            </div>
+
+                            <div>
+                                <p><b>SALE IS LIVE</b></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit.  </p>
+                            </div>
+
+                            <div>
+                                <p>15 Hrs ago.</p>
+                            </div>
+                            
+                        </a>
+
+                    </div>
+                    
+                </div>
+
+                <div class="log-out-1">
+                    <div class="log-out-container">
+                        <div id="hide-logout">
+                        <h5>JOHN DOE</h5>
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                    <div class="log-out-wrapper">
+                        <a href="settings.html">Admin</a>
+                        <a href="#!">My Account</a>
+                        <a href="login.html">Log out</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="sidebar">
+                    <div class="logo">
+                        <a href="index.html">
+                            logo
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="index.html"> <i class="bi bi-speedometer2"></i> Dashboard </a>
+                        </li>
+                        <li>
+                            <a href="customers.html"><i class="bi bi-people"></i> Customers </a>
+                        </li>
+                        <li>
+                            <a class="active" href="settings.html"><i class="bi bi-gear"></i> Settings</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="table-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 pb-4">
+                                    <div class="d-flex">
+                                        <i class="bi bi-person-fill"></i>
+                                        <p class="px-3">375 Users</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="search-bar">
+                                                <input type="text" placeholder="Search.." />
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                            <i class="bi bi-plus"></i> Add User
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">New User</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="/submit" method="post">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-lg-6 mb-3 d-flex align-items-center gap-2">
+                                                                        <div class="add-user-form">
+                                                                            <label for="name">Name</label>
+                                                                        <input type="text" id="name" name="name" required>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-6 mb-3">
+                                                                        <div class="add-user-form">
+                                                                        <label for="email">Email</label>
+                                                                        <input type="email" id="email" name="email" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-6 mb-3">
+                                                                        <div class="add-user-form">
+                                                                        <label for="phone">Phone No.</label>
+                                                                        <input type="text" id="phone" name="phone" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-6 mb-3">
+                                                                        <div class="add-user-form">
+                                                                        <label for="password">Password</label>
+                                                                        <input type="password" id="password" name="password" required>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-6 mb-3">
+                                                                        <div class="add-user-form">
+                                                                        <label for="role">Site Role</label>
+                                                                        <input type="text" id="role" name="role" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                        </form>
+
+                                                    </div>
+                                                    <div class="modal-footer d-flex justify-content-between">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="button" class="btn btn-primary">Add User</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-table-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="data-table">
+                                        <table>
+                                            <tr class="small">
+                                                <th>#</th>
+                                                <th style="color: #758794;">Name</th>
+                                                <th style="color: #758794;">Email</th>
+                                                <th style="color: #758794;">Phone No.</th>
+                                                <th style="color: #758794;">Actions</th>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>1</td>
+                                                <td>Cameron Williamson</td>
+                                                <td>cameron@email.com</td>
+                                                <td>070123456</td>
+                                                <td class="actions">
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#deactivate"3 letter word for mineral spring
+                                                     class="bi bi-ban"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#edit" class="bi bi-pencil"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#delete" class="bi bi-trash3"></i>
+                                                </td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>2</td>
+                                                <td>Jacob Jones</td>
+                                                <td>jacob@email.com</td>
+                                                <td>071234567</td>
+                                                <td class="actions">
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#deactivate" class="bi bi-ban"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#edit" class="bi bi-pencil"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#delete" class="bi bi-trash3"></i>
+                                                </td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>3</td>
+                                                <td>Kristin Watson</td>
+                                                <td>kristin@email.com</td>
+                                                <td>072345678</td>
+                                                <td class="actions">
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#deactivate" class="bi bi-ban"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#edit" class="bi bi-pencil"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#delete" class="bi bi-trash3"></i>
+                                                </td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>4</td>
+                                                <td>Esther Howard</td>
+                                                <td>esther@email.com</td>
+                                                <td>073456789</td>
+                                                <td class="actions">
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#deactivate" class="bi bi-ban"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#edit" class="bi bi-pencil"></i>
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#delete" class="bi bi-trash3"></i>
+                                                </td>
+                                            </tr>
+                                            <tr class="small">
+                                                <td>5</td>
+                                                <td>Heidi Moor</td>
+                                                <td>heidi@email.com</td>
+                                                <td>074567890</td>
+                                                <td class="actions">
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#deactivate" class="bi bi-ban"></i>
+
+                                                    <div class="modal fade" id="deactivate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">New User</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+                                                                    <form action="/submit" method="post">
+
+                                                                        <div class="container">
+                                                                            <div class="row">
+
+                                                                                <div class="col-12 col-lg-6 mb-3 d-flex align-items-center gap-2">
+                                                                                    <div class="add-user-form">
+                                                                                        <label for="name">Name</label>
+                                                                                        <input type="text" id="name" name="name" required>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                        <label for="email">Email</label>
+                                                                                        <input type="email" id="email" name="email" required>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                        <label for="phone">Phone No.</label>
+                                                                                        <input type="text" id="phone" name="phone" required>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                        <label for="password">Password</label>
+                                                                                        <input type="password" id="password" name="password" required>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="role">Site Role</label>
+                                                                                    <input type="text" id="role" name="role" required>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+                                                                </div>
+
+                                                                <div class="modal-footer d-flex justify-content-between">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+                                                                    <button type="button" class="btn btn-primary">Deactivate</button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#edit" class="bi bi-pencil"></i>
+
+                                                    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">New User</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+                                                                    <form action="/submit" method="post">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-lg-6 mb-3 d-flex align-items-center gap-2">
+                                                                                    <div class="add-user-form">
+                                                                                        <label for="name">Name</label>
+                                                                                        <input type="text" id="name" name="name" required>
+                                                                                    </div>
+                                                                                    
+                                                                                </div>
+
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="email">Email</label>
+                                                                                    <input type="email" id="email" name="email" required>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="phone">Phone No.</label>
+                                                                                    <input type="text" id="phone" name="phone" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="password">Password</label>
+                                                                                    <input type="password" id="password" name="password" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="role">Site Role</label>
+                                                                                    <input type="text" id="role" name="role" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        
+                                                                    </form>
+
+                                                                </div>
+
+                                                                <div class="modal-footer d-flex justify-content-between">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+                                                                    <button type="button" class="btn btn-primary">Edit</button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <i type="button" data-bs-toggle="modal" data-bs-target="#delete" class="bi bi-trash3"></i>
+
+                                                    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">New User</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form action="/submit" method="post">
+                                                                        <div class="container">
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-lg-6 mb-3 d-flex align-items-center gap-2">
+                                                                                    <div class="add-user-form">
+                                                                                        <label for="name">Name</label>
+                                                                                    <input type="text" id="name" name="name" required>
+                                                                                    </div>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="email">Email</label>
+                                                                                    <input type="email" id="email" name="email" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="phone">Phone No.</label>
+                                                                                    <input type="text" id="phone" name="phone" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="password">Password</label>
+                                                                                    <input type="password" id="password" name="password" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 col-lg-6 mb-3">
+                                                                                    <div class="add-user-form">
+                                                                                    <label for="role">Site Role</label>
+                                                                                    <input type="text" id="role" name="role" required>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        
+                                                                    </form>
+
+                                                                </div>
+                                                                <div class="modal-footer d-flex justify-content-between">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" data-bs-dismiss="modal">Cancel</button>
+                                                                    <button type="button" class="btn btn-primary">Delete</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#log-out").click(function(){
+                    $(".log-out-1").show();
+                });
+                $("#hide-logout").click(function(){
+                    $(".log-out-1").hide();
+                });
+            });
+
+            $(document).ready(function(){
+                
+                $("#notifications").click(function(){
+                    $(".notifications-modal").show();
+                });
+                $("#hide").click(function(){
+                    $(".notifications-modal").hide();
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript"></script>
+    </body>
+</html>
